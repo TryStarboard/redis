@@ -2,6 +2,14 @@
 
 const Redis = require('ioredis');
 
+/**
+ * @param  {Object} opts
+ * @param  {Object} opts.host
+ * @param  {Object} opts.port
+ * @param  {Object} opts.password
+ * @param  {Object} opts.log
+ * @return {Object}
+ */
 function createClient(opts) {
   const client = new Redis({
     host: opts.host,
