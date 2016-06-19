@@ -7,7 +7,12 @@
   "dependencies": {
     "ioredis": "2.0.1"
   },
+  "devDependencies": {
+    "greenkeeper-postpublish": "^1.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "git push && git push --tags",
+    "postpublish": "greenkeeper-postpublish"
   }
 }
