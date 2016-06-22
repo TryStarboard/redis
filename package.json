@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "src/index.js",
   "dependencies": {
-    "ioredis": "2.0.1"
+    "ioredis": "2.1.0"
   },
   "devDependencies": {
     "eslint": "2.13.1",
