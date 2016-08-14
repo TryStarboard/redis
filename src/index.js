@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-const Redis = require('ioredis');
+const Redis = require('ioredis')
 
 /**
  * @param  {Object} opts
@@ -15,18 +15,18 @@ function createClient(opts) {
     host: opts.host,
     port: opts.port,
     password: opts.password,
-    retryStrategy: () => 1000,
-  });
-  client.on('error', (err) => opts.log.error(err));
-  return client;
+    retryStrategy: () => 1000
+  })
+  client.on('error', (err) => opts.log.error(err))
+  return client
 }
 
 function createFactory(opts) {
   return function () {
-    return createClient(opts);
-  };
+    return createClient(opts)
+  }
 }
 
 module.exports = {
-  createFactory,
-};
+  createFactory
+}
